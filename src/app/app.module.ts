@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
+import { SharedModule } from './shared/shared.module';
 
 
 
@@ -15,7 +16,8 @@ import { PrimeNgModule } from './prime-ng/prime-ng.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PrimeNgModule
+    PrimeNgModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
