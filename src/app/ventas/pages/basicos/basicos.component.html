@@ -4,18 +4,27 @@
 </div>
 <div class="p-d-flex grid">
     <div class="col-4" style="border: 1px solid green; ">
-        <p-card header="UpperCase">
-
+        <p-card header="UpperCase" [subheader]="nombreLower | uppercase">
+            Texto Original: {{nombreLower}} <br>
+            Texto Con pipe: {{nombreLower | uppercase}}
+            <br><br>
+            Esto pasa por un pipe para modificar visualmente de cara al cliente
         </p-card>
     </div>
     <div class="col-4" style="border: 1px solid green; ">
-        <p-card>
-
+        <p-card header="Lowercase" [subheader]="nombreUpper | lowercase">
+            Texto Original: {{nombreUpper}} <br>
+            Texto Con pipe: {{nombreUpper | lowercase}}
+            <br><br>
+            Esto pasa por un pipe para modificar visualmente de cara al cliente
         </p-card>
     </div>
     <div class="col-4" style="border: 1px solid green; ">
-        <p-card>
-
+        <p-card header="Title Case" [subheader]="nombreCompleto | titlecase">
+            Texto Original: {{nombreCompleto}} <br>
+            Texto Con pipe: {{nombreCompleto | titlecase}}
+            <br><br>
+            Esto pasa por un pipe para modificar visualmente de cara al cliente
         </p-card>
     </div>
 </div>
