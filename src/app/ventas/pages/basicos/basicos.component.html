@@ -28,3 +28,34 @@
         </p-card>
     </div>
 </div>
+<div class="text-layout">
+    <h1>Date y el uso de Pipe</h1>
+    <p>Pipes Para mostrar fecha</p>
+</div>
+<div class="grid">
+    <div class="col-6">
+        <p-card>
+            <ul>
+                <li>fecha</li>
+                <li>fecha | date</li>
+                <li>fecha | date: 'short'</li>
+                <li>fecha | date: 'long'</li>
+                <li>fecha | date: 'months'</li>
+                <li>fecha | date: 'MMMM dd, yyyy'</li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="col-6">
+        <p-card>
+            <ul>
+                <li>{{fecha}}</li>
+                <li>{{fecha | date}}</li>
+                <li>{{fecha | date :'short'}}</li>
+                <li>{{fecha | date :'long'}}</li>
+                <li>{{fecha | date :'MMMM'}}</li>
+                <li>{{fecha | date :'MMMM dd, yyyy'}}</li>
+            </ul>
+        </p-card>
+    </div>
+    
+</div>
