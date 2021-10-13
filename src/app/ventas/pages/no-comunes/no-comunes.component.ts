@@ -18,7 +18,7 @@ export class NoComunesComponent implements OnInit {
   }
   // i18nPlural
 
-  clientes: string[]=['Maria','Pedro','Evelyn',''];
+  clientes: string[]=['Maria','Pedro','Evelyn','Gustavo','Joaquin','Franco'];
   clientesMapa = {
     '=0': 'No tenemos clientes en espera',
     '=1': 'Tenemos un cliente en espera',
