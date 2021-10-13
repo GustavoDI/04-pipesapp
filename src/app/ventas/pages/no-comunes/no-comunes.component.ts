@@ -34,6 +34,14 @@ export class NoComunesComponent implements OnInit {
     this.clientes.pop();
   }
 
+  // keyvalue pipe
+
+  persona = {
+    nombre: 'Fernando',
+    edad: 35,
+    direccion: 'Broklyn , New York'
+  }
+
   constructor() { }
 
   ngOnInit (): void {
