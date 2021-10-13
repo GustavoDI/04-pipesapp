@@ -39,8 +39,20 @@ export class NoComunesComponent implements OnInit {
   persona = {
     nombre: 'Fernando',
     edad: 35,
-    direccion: 'Broklyn , New York'
+    direccion: 'broklyn , new York'
   }
+
+  // JSON pipe
+  heroes =[
+{
+  nombre:'superman',
+  vuela: true
+},
+{
+  nombre:'batman',
+  vuela: false
+}
+  ]
 
   constructor() { }
 
