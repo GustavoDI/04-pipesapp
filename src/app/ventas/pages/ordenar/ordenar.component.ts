@@ -11,6 +11,7 @@ export class OrdenarComponent implements OnInit {
 
   nosotros: string = " nosotros";  
   enMayusculas : boolean = true;
+  ordenarPor: string ="";
   heroes:Heroe[]=[
     {
       nombre: "Superman",
@@ -39,6 +40,11 @@ export class OrdenarComponent implements OnInit {
   }
   cambioMayusculas(){
     this.enMayusculas = !this.enMayusculas;
+  }
+
+  cambiarOrden(valor:string){
+    this.ordenarPor = valor;
+    console.log(valor)
   }
 
 }
