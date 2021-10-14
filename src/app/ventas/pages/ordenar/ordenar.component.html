@@ -1,1 +1,9 @@
-<p>ordenar works!</p>
+
+<div class="text-layout">
+    <h1>Pipes personalizados en Angular</h1>
+    <p>
+        <!-- Creación {{nosotros | mayusculas:false}} -->
+        Creación {{nosotros | mayusculas:enMayusculas}}
+    </p>
+    <button pButton label="Cambia Mayúsculas" (click)="cambioMayusculas()"></button>
+</div>
