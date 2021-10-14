@@ -22,7 +22,7 @@
 
 <div class="p-grid" style="border: green solid 1px;">
     <div class="p-col mt-2">
-        <p-table [value]="heroes">
+        <p-table [value]="heroes | ordenar">
             <ng-template pTemplate="header">
                 <tr>
                     <th>Nombre</th>
