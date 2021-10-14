@@ -1,9 +1,43 @@
-
 <div class="text-layout">
     <h1>Pipes personalizados en Angular</h1>
     <p>
         <!-- Creación {{nosotros | mayusculas:false}} -->
         Creación {{nosotros | mayusculas:enMayusculas}}
     </p>
-    <button pButton label="Cambia Mayúsculas" (click)="cambioMayusculas()"></button>
+</div>
+<p-toolbar>
+    <div class="p-toolbar-group-left">
+
+    </div>
+
+    <div class="p-toolbar-group-right">
+        <button pButton label="Cambia Mayúsculas" (click)="cambioMayusculas()" class="mr-1"></button>
+        <button pButton icon="pi pi-sort" label="Por nombre" class="mr-1"></button>
+        <button pButton icon="pi pi-sort" label="Valores" class="mr-1"></button>
+        <button pButton icon="pi pi-sort" label="Por color" class="mr-1 p-button-help"></button>
+    </div>
+</p-toolbar>
+
+<h1 style="border: green solid 1px;">Tabla</h1>
+
+<div class="p-grid" style="border: green solid 1px;">
+    <div class="p-col mt-2">
+        <p-table [value]="heroes">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Poder</th>
+                    <th>Color</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-heroe>
+                <tr>
+                    <td>{{heroe.nombre}}</td>
+                    <td>{{heroe.vuela | vuela | titlecase}}</td>
+                    <td>{{heroe.color}}</td>
+
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
 </div>
